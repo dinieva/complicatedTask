@@ -1,7 +1,7 @@
 let arr = ['1234', '4376', '245454', '476554', '87', '23', '45'];
 
 for (let elem of arr) {
-    if(elem[0] === 2 || elem[0] === 4){
+    if(elem[0] === '2' || elem[0] === '4'){
         console.log(elem);
     }
 }
