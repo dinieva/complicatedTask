@@ -21,10 +21,15 @@ let today = new Date().getDay() - 1;
 for (let day = 0; day < week.length; day++) {
     let text = document.createElement('p');
     text.innerHTML  = week[day];
-    if(day === 5 || day === 6){
-        text.style.fontStyle = 'italic';
-    } else if (day === today) {
+    
+    if (day === today) {
         text.style.fontWeight = 'bold';
+
+        if (today === 5 || today ===6){
+            text.style.fontStyle = 'italic';
+        }
+    } else if(day === 5 || day === 6){
+        text.style.fontStyle = 'italic';
     }
     document.body.append(text);
 }
